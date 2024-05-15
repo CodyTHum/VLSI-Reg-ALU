@@ -1,0 +1,26 @@
+timestamp 1711559039
+version 8.3
+tech scmos
+style HP0.5um(hpcmos14tb)from:N9AE
+scale 1000 1 30
+resistclasses 2800 2300 713000 713000 1 2500 2500 70 70 50
+node "VSS" 53 1590.48 -2 -9 poc 72 60 48 48 0 0 0 0 0 0 0 0 0 0 328 172 0 0 0 0
+node "Y" 7 484.47 46 -1 ndif 20 18 20 18 0 0 0 0 0 0 0 0 0 0 100 58 0 0 0 0
+node "a_6_20#" 12 0 6 20 pdif 0 0 80 48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "INV" 55 2121.01 6 -1 ndif 80 48 24 20 0 0 0 0 0 0 82 74 0 0 196 106 0 0 0 0
+node "B" 37 1294.18 20 15 pc 0 0 0 0 0 0 0 0 0 0 82 74 0 0 16 16 0 0 0 0
+node "A" 38 1331.26 -2 7 pc 0 0 0 0 0 0 0 0 0 0 84 76 0 0 16 16 0 0 0 0
+node "VDD" 32 1519.74 -2 20 pdc 32 32 48 40 0 0 0 0 0 0 0 0 0 0 296 156 0 0 0 0
+cap "Y" "INV" 36.9392
+cap "Y" "VDD" 106.2
+cap "VSS" "INV" 184.696
+cap "Y" "VSS" 106.2
+cap "INV" "B" 214.992
+cap "VSS" "A" 46.174
+cap "VDD" "INV" 115.435
+fet nfet 44 -1 45 0 8 12 "Gnd!" "INV" 4 0 "VSS" 4 0 "Y" 4 0
+fet nfet 26 -1 27 0 8 12 "Gnd!" "B" 4 0 "INV" 4 0 "VSS" 4 0
+fet nfet 4 -1 5 0 8 12 "Gnd!" "A" 4 0 "VSS" 4 0 "INV" 4 0
+fet pfet 44 20 45 21 8 12 "Vdd!" "INV" 4 0 "VDD" 4 0 "Y" 4 0
+fet pfet 26 20 27 21 8 12 "Vdd!" "B" 4 0 "a_6_20#" 4 0 "INV" 4 0
+fet pfet 4 20 5 21 8 12 "Vdd!" "A" 4 0 "VDD" 4 0 "a_6_20#" 4 0
